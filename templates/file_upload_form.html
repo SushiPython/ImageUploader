@@ -1,0 +1,36 @@
+<html>  
+<head>
+    <div class="center">
+    <title>Upload Image</title>
+    <h1>Simple Image Uploader</h1>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+</head>  
+<body><br><center>
+    <form action="/success" method = "post" enctype="multipart/form-data">  
+    <input type="file" name="file" id="img" style="display:none;"/>
+    <label class="imgLabel" for="img">Click to Select Image</label><br><br>
+    <input type="submit" value="Upload">
+    </form></center></div>
+</body>  
+</html> 
+
+<style>
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/*
+.imgLabel {
+  background-color:#141414;
+  padding:10px;
+  border-radius:5px;
+  box-shadow:0 1px 0 0;
+  transition-duration:500ms;
+  text-align:center;
+  max-width:50%;
+  margin:0 auto;
+  cursor:pointer
+}
+</style>
